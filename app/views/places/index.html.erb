@@ -1,5 +1,6 @@
 <h1> Places </h1>
 
+<% if @current_user %>
 <p>
 <a href="/places/new" class="btn btn-success">New Place</a>
 </p>
@@ -9,3 +10,4 @@
     <p><a href="/places/<%= place.id %>"><%= place.name %></a></p>
   <% end %>
 </h2>
+<% end %>
